@@ -1,115 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Генератор вариантов по "Теории вероятностей"</title>
-    <link rel="shortcut icon" href="icon.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <script src="logic.js"></script>
-    <script type="text/javascript" src="/eel.js"></script>
-</head>
-<body>
-<div class="main_menu">
-    <div class="wrapper">
-        <label for="count">
-            <h3 id="title">Количество вариантов</h3>
-        </label>
-        <input type="number" id="count" min="0" max="100" placeholder="100">
-        <input type="button" id="gen_button" value="СГЕНЕРИРОВАТЬ">
-        <input type="button" id="settings_button" value="НАСТРОЙКИ">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Генератор вариантов по "Теории вероятностей"</title>
+        <link rel="shortcut icon" href="icon.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <script src="logic.js"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+    </head>
+    <body>
+    <div class="main_menu">
+        <div class="wrapper">
+            <label for="count">
+                <h3 id="title">Количество вариантов</h3>
+            </label>
+            <input type="number" id="count" min="0" max="100" placeholder="100" value=0>
+            <input type="button" id="gen_button" value="СГЕНЕРИРОВАТЬ">
+            <input type="button" id="settings_button" value="НАСТРОЙКИ">
+        </div>
     </div>
-</div>
-<div class="settings">
-    <input type="button" id="back_button" value="X">
-    <div class="settings_container">
-        <h3 id="settings_container_title">Выбор заданий</h3>
-        <div class="task_category" id="task_category_1">
-            <h3 class="task_category_title" id="task_category_1_title">Теория</h3>
-            <div class="task_count">
-                <input type="number" class="task_count_input" placeholder="0">
-                <h4 class="number_of_tasks">/ 1</h4>
+    <div class="settings">
+        <input type="button" id="back_button" value="X">
+        <div class="settings_container">
+            <h3 id="settings_container_title">Выбор заданий</h3>
+            <div class="task_category" id="task_category_1">
+                <h3 class="task_category_title" id="task_category_1_title">Теория</h3>
+                <div class="task_count">
+                    <input type="number" class="task_count_input" placeholder="0" value="">
+                    <h4 class="number_of_tasks">/ 1</h4>
+                </div>
+            </div>
+            <div class="task_category" id="task_category_2">
+                <h3 class="task_category_title" id="task_category_2_title">Практика</h3>
+                <did class="tasks_folder">
+                    <div class="task">
+                        <h4 class="task_title">Определение вероятности</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice1" value=0>
+                            <h4 class="number_of_tasks">/ 2</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Полная вероятность. Формула Байеса.</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice2" value=0>
+                            <h4 class="number_of_tasks">/ 1</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Законы распределения вероятностей дискретных случайных величин</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice3" value=0>
+                            <h4 class="number_of_tasks">/ 10</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Числовые характеристики случайных величин</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice4" value=0>
+                            <h4 class="number_of_tasks">/ 5</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Характеристики вариационного ряда</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice5" value=0>
+                            <h4 class="number_of_tasks">/ 3</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Статистическое распределение выборки</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice6" value=0>
+                            <h4 class="number_of_tasks">/ 4</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Точечные оценки параметров распределения</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice7" value=0>
+                            <h4 class="number_of_tasks">/ 4</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Интервальные оценки параметров распределения</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice8" value=0>
+                            <h4 class="number_of_tasks">/ 5</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Проверка статистических гипотез</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice9" value=0>
+                            <h4 class="number_of_tasks">/ 3</h4>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <h4 class="task_title">Элементы корреляционного анализа</h4>
+                        <div class="task_count">
+                            <input type="number" class="task_count_input" placeholder="0" id="practice10" value=0>
+                            <h4 class="number_of_tasks">/ 6</h4>
+                        </div>
+                    </div>
+                </did>
             </div>
         </div>
-        <div class="task_category" id="task_category_2">
-            <h3 class="task_category_title" id="task_category_2_title">Практика</h3>
-            <did class="tasks_folder">
-                <div class="task">
-                    <h4 class="task_title">Определение вероятности</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 2</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Полная вероятность. Формула Байеса.</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 1</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Законы распределения вероятностей дискретных случайных величин</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 10</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Числовые характеристики случайных величин</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 5</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Характеристики вариационного ряда</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 3</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Статистическое распределение выборки</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 4</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Точечные оценки параметров распределения</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 4</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Интервальные оценки параметров распределения</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 5</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Проверка статистических гипотез</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 3</h4>
-                    </div>
-                </div>
-                <div class="task">
-                    <h4 class="task_title">Элементы корреляционного анализа</h4>
-                    <div class="task_count">
-                        <input type="number" class="task_count_input" placeholder="0">
-                        <h4 class="number_of_tasks">/ 6</h4>
-                    </div>
-                </div>
-            </did>
-        </div>
     </div>
-</div>
-</body>
-</html>
+    </body>
+    </html>
