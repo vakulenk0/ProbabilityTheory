@@ -47,14 +47,27 @@ window.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
-
     
     let g = 1;
     let t = 2;
     let gen_button = document.getElementById("gen_button");
     gen_button.addEventListener("click", function () {
-        eel.makeVariants(g, t);
+        let mass_practice = [
+            document.getElementById('count').value,
+            document.getElementById("practice1").value,
+            document.getElementById("practice2").value,
+            document.getElementById("practice3").value,
+            document.getElementById("practice4").value,
+            document.getElementById("practice5").value,
+            document.getElementById("practice6").value,
+            document.getElementById("practice7").value,
+            document.getElementById("practice8").value,
+            document.getElementById("practice9").value,
+            document.getElementById("practice10").value
+        ];
+        // eel.makeVariants(mass_practice);
+        // eel.check();
+        eel.build(mass_practice);
     });
 
 
