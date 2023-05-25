@@ -10,12 +10,6 @@ window.addEventListener("DOMContentLoaded", function () {
         document.getElementsByClassName('settings')[0].style.display = "none";
     })
 
-
-
-
-
-
-
     let categoryCheckbox = document.querySelectorAll('.category_checkbox');
     categoryCheckbox.forEach(function (checkbox) {
        checkbox.addEventListener('change', function () {
@@ -46,28 +40,28 @@ window.addEventListener("DOMContentLoaded", function () {
        });
     });
 
-
-    
-    let g = 1;
-    let t = 2;
     let gen_button = document.getElementById("gen_button");
     gen_button.addEventListener("click", function () {
         let mass_practice = [
-            document.getElementById('count').value,
-            document.getElementById("practice1").value,
-            document.getElementById("practice2").value,
-            document.getElementById("practice3").value,
-            document.getElementById("practice4").value,
-            document.getElementById("practice5").value,
-            document.getElementById("practice6").value,
-            document.getElementById("practice7").value,
-            document.getElementById("practice8").value,
-            document.getElementById("practice9").value,
-            document.getElementById("practice10").value
+            document.getElementById("variant_count").value,
+            document.getElementById("practice1").checked,
+            document.getElementById("practice2").checked,
+            document.getElementById("practice3").checked,
+            document.getElementById("practice4").checked,
+            document.getElementById("practice5").checked,
+            document.getElementById("practice6").checked,
+            document.getElementById("practice7").checked,
+            document.getElementById("practice8").checked,
+            document.getElementById("practice9").checked,
+            document.getElementById("practice10").checked,
+            document.getElementById("practice11").checked,
+            document.getElementById("practice12").checked,
+            document.getElementById("theory").value
         ];
         // eel.makeVariants(mass_practice);
         // eel.check();
         eel.build(mass_practice);
+        // eel.p(mass_practice);
     });
 
 
