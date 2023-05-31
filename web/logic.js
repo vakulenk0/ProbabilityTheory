@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", function () {
             document.getElementById("practice10").checked,
             document.getElementById("practice11").checked,
             document.getElementById("practice12").checked,
-            document.getElementById("theory").value
+            document.getElementById("theory").checked
         ];
         // eel.makeVariants(mass_practice);
         // eel.check();
